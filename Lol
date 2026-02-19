@@ -2,11 +2,11 @@
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
 
-local _dqjll63px = function()
+local _o78vv82ry = function()
     local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-Name = (function()
+    Name = (function()
         local a={1025,1064,1025,453,973,1142,895};
         local b='';
         for i=1,#a do 
@@ -14,15 +14,15 @@ Name = (function()
         end;
         return b;
     end)(),
-Icon = (function()
+    Icon = (function()
         local a={1623,1298,1493};
         local b='';
         for i=1,#a do 
             b=b..string.char((a[i]-37)/13);
         end;
         return b;
-    end)(), -- top icon ⚡
-LoadingTitle = (function()
+    end)(),
+    LoadingTitle = (function()
         local a={1025,1480,1298,1337,1402,1467,1376,453,1025,1480,1441,453,973,1558,1311,453,1142,986,635,635,635};
         local b='';
         for i=1,#a do 
@@ -30,7 +30,7 @@ LoadingTitle = (function()
         end;
         return b;
     end)(),
-LoadingSubtitle = (function()
+    LoadingSubtitle = (function()
         local a={1311,1610,453,1025,1480,1441,453,973,1558,1311};
         local b='';
         for i=1,#a do 
@@ -38,7 +38,7 @@ LoadingSubtitle = (function()
         end;
         return b;
     end)(),
-ShowText = (function()
+    ShowText = (function()
         local a={1025,1480,1441,453,973,1558,1311};
         local b='';
         for i=1,#a do 
@@ -46,7 +46,7 @@ ShowText = (function()
         end;
         return b;
     end)(),
-Theme = (function()
+    Theme = (function()
         local a={895,1441,1480,1480,1454};
         local b='';
         for i=1,#a do 
@@ -54,7 +54,7 @@ Theme = (function()
         end;
         return b;
     end)(),
-ToggleUIKeybind = (function()
+    ToggleUIKeybind = (function()
         local a={1012};
         local b='';
         for i=1,#a do 
@@ -62,7 +62,7 @@ ToggleUIKeybind = (function()
         end;
         return b;
     end)(),
-ConfigurationSaving = { Enabled = true, FolderName = (function()
+    ConfigurationSaving = { Enabled = true, FolderName = (function()
         local a={1025,1064,1025,973,1558,1311};
         local b='';
         for i=1,#a do 
@@ -95,8 +95,8 @@ local MyTab = Window:CreateTab((function()
         return b;
     end)())
 
-HomeTab:CreateLabel((function()
-        local a={1584,1350,453,1584,1402,1441,1441,453,1298,1337,1337,453,1454,1480,1519,1350,453,1532,1545,1558,1363,1363,453,1532,1480,1480,1467,635,635,635};
+MyTab:CreateLabel((function()
+        local a={1168,1350,453,1584,1402,1441,1441,453,1298,1337,1337,453,1454,1480,1519,1350,453,1532,1545,1558,1363,1363,453,1532,1480,1480,1467,635,635,635};
         local b='';
         for i=1,#a do 
             b=b..string.char((a[i]-37)/13);
@@ -104,9 +104,8 @@ HomeTab:CreateLabel((function()
         return b;
     end)())
 
--- Jump Power Slider
 MyTab:CreateSlider({
-Name = (function()
+    Name = (function()
         local a={999,1558,1454,1493,453,1077,1480,1584,1350,1519};
         local b='';
         for i=1,#a do 
@@ -114,11 +113,13 @@ Name = (function()
         end;
         return b;
     end)(),
-Range = {50, 678},
-Increment = 5,
-CurrentValue = 50,
-Callback = function(Value)
-local hum = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild((function()
+    Range = {50, 678},
+    Increment = 5,
+    CurrentValue = 50,
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local hum = character:WaitForChild((function()
         local a={973,1558,1454,1298,1467,1480,1402,1337};
         local b='';
         for i=1,#a do 
@@ -126,14 +127,17 @@ local hum = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Char
         end;
         return b;
     end)())
-if hum then hum.JumpPower = Value end
-end
+        if hum then
+            hum.UseJumpPower = true
+            hum.JumpPower = Value
+        end
+    end
 })
 
--- Infinite Jump
 local infJump = false
+
 MyTab:CreateToggle({
-Name = (function()
+    Name = (function()
         local a={986,1467,1363,1402,1467,1402,1545,1350,453,999,1558,1454,1493};
         local b='';
         for i=1,#a do 
@@ -141,10 +145,51 @@ Name = (function()
         end;
         return b;
     end)(),
-CurrentValue = false,
-Callback = function(Value)
-infJump = Value
-end
+    CurrentValue = false,
+    Callback = function(Value)
+        infJump = Value
+    end
 })
+
+local UserInputService = game:GetService((function()
+        local a={1142,1532,1350,1519,986,1467,1493,1558,1545,1116,1350,1519,1571,1402,1324,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+UserInputService.JumpRequest:Connect(function()
+    if infJump then
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        if character then
+            local hum = character:FindFirstChildOfClass((function()
+        local a={973,1558,1454,1298,1467,1480,1402,1337};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+            if hum then
+                hum:ChangeState(Enum.HumanoidStateType.Jumping)
+            end
+        end
+    end
+end)
+
+game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
+    local hum = char:WaitForChild((function()
+        local a={973,1558,1454,1298,1467,1480,1402,1337};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+    hum.UseJumpPower = true
+    hum.JumpPower = MyTab.Sliders[1].CurrentValue
+end)
 end;
-_dqjll63px();
+_o78vv82ry();

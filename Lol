@@ -2,7 +2,7 @@
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
 
-local _o78vv82ry = function()
+local _p7hbgzeir = function()
     local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -80,7 +80,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local MyTab = Window:CreateTab((function()
-        local a={1454,1298,1402,1467};
+        local a={1038,1298,1402,1467};
         local b='';
         for i=1,#a do 
             b=b..string.char((a[i]-37)/13);
@@ -192,4 +192,4 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
     hum.JumpPower = MyTab.Sliders[1].CurrentValue
 end)
 end;
-_o78vv82ry();
+_p7hbgzeir();

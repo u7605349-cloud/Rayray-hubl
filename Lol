@@ -1,8 +1,79 @@
-
 local Players = game:GetService("Players")
 local StarterGui = game:GetService("StarterGui")
 
-local _p7hbgzeir = function()
+local _m12mpy0fz = function()
+    local Players = game:GetService((function()
+        local a={1077,1441,1298,1610,1350,1519,1532};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+local StarterGui = game:GetService((function()
+        local a={1116,1545,1298,1519,1545,1350,1519,960,1558,1402};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+
+local _pl48h45e5 = function()
+    local Players = game:GetService((function()
+        local a={1077,1441,1298,1610,1350,1519,1532};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+local StarterGui = game:GetService((function()
+        local a={1116,1545,1298,1519,1545,1350,1519,960,1558,1402};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+
+local _69gxh5mr7 = function()
+    local Players = game:GetService((function()
+        local a={1077,1441,1298,1610,1350,1519,1532};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+local StarterGui = game:GetService((function()
+        local a={1116,1545,1298,1519,1545,1350,1519,960,1558,1402};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+
+local _q7q9adig2 = function()
+    local Players = game:GetService((function()
+        local a={1077,1441,1298,1610,1350,1519,1532};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+local StarterGui = game:GetService((function()
+        local a={1116,1545,1298,1519,1545,1350,1519,960,1558,1402};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+
+local _l90d0wyas = function()
     local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
@@ -79,15 +150,55 @@ local Window = Rayfield:CreateWindow({
     end)() }
 })
 
-local MyTab = Window:CreateTab((function()
-        local a={1038,1298,1402,1467};
+local HomeTab = Window:CreateTab((function()
+        local a={719665,745093,453,973,1480,1454,1350};
         local b='';
         for i=1,#a do 
             b=b..string.char((a[i]-37)/13);
         end;
         return b;
     end)(), (function()
-        local a={1467,1402,1441};
+        local a={1389,1480,1454,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+HomeTab:CreateSection((function()
+        local a={986,1467,1363,1480,1519,1454,1298,1545,1402,1480,1467};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+HomeTab:CreateLabel((function()
+        local a={128581,845544,453,1142,1532,1350,453,1298,1545,453,1610,1480,1558,1519,453,1480,1584,1467,453,1519,1402,1532,1428};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+HomeTab:CreateLabel((function()
+        local a={719678,734160,453,1038,1298,1337,1350,453,1311,1610,453,1025,1480,1441,453,973,1558,1311};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+HomeTab:CreateLabel((function()
+        local a={719678,735330,453,1038,1480,1311,1402,1441,1350,453,1116,1558,1493,1493,1480,1519,1545,1350,1337};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+HomeTab:CreateLabel((function()
+        local a={453,1584,1350,1441,1324,1480,1454,1350,453,1545,1480,453,1480,1558,1519,453,1025,1064,1025,973,1558,1311};
         local b='';
         for i=1,#a do 
             b=b..string.char((a[i]-37)/13);
@@ -95,16 +206,7 @@ local MyTab = Window:CreateTab((function()
         return b;
     end)())
 
-MyTab:CreateLabel((function()
-        local a={1168,1350,453,1584,1402,1441,1441,453,1298,1337,1337,453,1454,1480,1519,1350,453,1532,1545,1558,1363,1363,453,1532,1480,1480,1467,635,635,635};
-        local b='';
-        for i=1,#a do 
-            b=b..string.char((a[i]-37)/13);
-        end;
-        return b;
-    end)())
-
-MyTab:CreateSlider({
+HomeTab:CreateSlider({
     Name = (function()
         local a={999,1558,1454,1493,453,1077,1480,1584,1350,1519};
         local b='';
@@ -113,13 +215,11 @@ MyTab:CreateSlider({
         end;
         return b;
     end)(),
-    Range = {50, 678},
+    Range = {50, 300},
     Increment = 5,
     CurrentValue = 50,
     Callback = function(Value)
-        local player = game.Players.LocalPlayer
-        local character = player.Character or player.CharacterAdded:Wait()
-        local hum = character:WaitForChild((function()
+        local hum = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild((function()
         local a={973,1558,1454,1298,1467,1480,1402,1337};
         local b='';
         for i=1,#a do 
@@ -127,16 +227,12 @@ MyTab:CreateSlider({
         end;
         return b;
     end)())
-        if hum then
-            hum.UseJumpPower = true
-            hum.JumpPower = Value
-        end
+        if hum then hum.JumpPower = Value end
     end
 })
 
 local infJump = false
-
-MyTab:CreateToggle({
+HomeTab:CreateToggle({
     Name = (function()
         local a={986,1467,1363,1402,1467,1402,1545,1350,453,999,1558,1454,1493};
         local b='';
@@ -151,20 +247,16 @@ MyTab:CreateToggle({
     end
 })
 
-local UserInputService = game:GetService((function()
+game:GetService((function()
         local a={1142,1532,1350,1519,986,1467,1493,1558,1545,1116,1350,1519,1571,1402,1324,1350};
         local b='';
         for i=1,#a do 
             b=b..string.char((a[i]-37)/13);
         end;
         return b;
-    end)())
-UserInputService.JumpRequest:Connect(function()
+    end)()).JumpRequest:Connect(function()
     if infJump then
-        local player = game.Players.LocalPlayer
-        local character = player.Character
-        if character then
-            local hum = character:FindFirstChildOfClass((function()
+        local hum = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild((function()
         local a={973,1558,1454,1298,1467,1480,1402,1337};
         local b='';
         for i=1,#a do 
@@ -172,15 +264,47 @@ UserInputService.JumpRequest:Connect(function()
         end;
         return b;
     end)())
-            if hum then
-                hum:ChangeState(Enum.HumanoidStateType.Jumping)
-            end
-        end
+        if hum then hum:ChangeState(Enum.HumanoidStateType.Jumping) end
     end
 end)
 
-game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
-    local hum = char:WaitForChild((function()
+HomeTab:CreateButton({
+    Name = (function()
+        local a={1103,1350,1415,1480,1402,1467,453,960,1298,1454,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)(),
+    Callback = function()
+        local ts = game:GetService((function()
+        local a={1129,1350,1441,1350,1493,1480,1519,1545,1116,1350,1519,1571,1402,1324,1350};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+        local plr = game.Players.LocalPlayer
+        ts:Teleport(game.PlaceId, plr)
+    end
+})
+
+HomeTab:CreateSlider({
+    Name = (function()
+        local a={1168,1298,1441,1428,1116,1493,1350,1350,1337};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)(),
+    Range = {16, 300},
+    Increment = 5,
+    CurrentValue = 16,
+    Callback = function(Value)
+        local hum = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild((function()
         local a={973,1558,1454,1298,1467,1480,1402,1337};
         local b='';
         for i=1,#a do 
@@ -188,8 +312,76 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
         end;
         return b;
     end)())
-    hum.UseJumpPower = true
-    hum.JumpPower = MyTab.Sliders[1].CurrentValue
-end)
+        if hum then hum.WalkSpeed = Value end
+    end
+})
+
+local UtilTab = Window:CreateTab((function()
+        local a={719678,741765,453,1142,1545,1402,1441,1402,1545,1402,1350,1532};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)(), (function()
+        local a={1532,1350,1545,1545,1402,1467,1376,1532};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+UtilTab:CreateSection((function()
+        local a={1168,1350,453,1545,1389,1402,1467,1428,453,1545,1389,1402,1532,453,1454,1402,1376,1389,1545,453,1311,1350,453,1558,1532,1350,1363,1558,1441};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+
+UtilTab:CreateToggle({
+    Name = (function()
+        local a={882,1467,1545,1402,453,882,947,1012};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)(),
+    CurrentValue = true,
+    Callback = function(Value)
+        if Value then
+            local vu = game:GetService((function()
+        local a={1155,1402,1519,1545,1558,1298,1441,1142,1532,1350,1519};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)())
+            game:GetService((function()
+        local a={1077,1441,1298,1610,1350,1519,1532};
+        local b='';
+        for i=1,#a do 
+            b=b..string.char((a[i]-37)/13);
+        end;
+        return b;
+    end)()).LocalPlayer.Idled:Connect(function()
+                vu:Button2Down(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+                wait(1)
+                vu:Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+            end)
+        end
+    end
+})
 end;
-_p7hbgzeir();
+_l90d0wyas();
+end;
+_q7q9adig2();
+end;
+_69gxh5mr7();
+end;
+_pl48h45e5();
+end;
+_m12mpy0fz();
